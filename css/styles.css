@@ -2,11 +2,6 @@
   width: 183px;
 }
 
-h2 {
-  font-style: italic;
-  font-size: 19px;
-}
-
 .sidebar-portfolio {
   width: 11%;
   background-color: rgb(237, 242, 247); 
@@ -18,6 +13,24 @@ h2 {
   list-style: none;
   margin-left: -40px;
 
+}
+
+.aboutme-text {
+  border: 1px solid #fff;
+  margin-top: 75px;
+}
+
+.aboutme-screen {
+  border: 1px solid grey;
+  margin-top: 25px;
+  background-color: whitesmoke;
+  margin-left: 240px;
+  margin-right: 25px;
+  padding-top: 15px;
+}
+
+.aboutme-text, h3 {
+  text-align: center;
 }
 
 .top-aboutme-page-tab {
