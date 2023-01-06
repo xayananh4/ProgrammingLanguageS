@@ -45,3 +45,15 @@ span{
   font-size: xx-large;
 }
 
+.bio-container {
+  border: 1px solid black;
+  margin-top: 5px;
+  width: 48%;
+  margin-left: 8px;
+  display: inline-block;
+}
+
+.bio-container p {
+  margin-left: 8px;
+}
+
