@@ -14,6 +14,11 @@
   margin-left: -40px;
 }
 
+span{
+  font-family: 'Courier New';
+  font-size: larger;
+}
+
 .top-aboutme-page-tab {
   border: 1px solid #fff;
 }
@@ -22,6 +27,7 @@
 .aboutme-text {
   margin-top: 75px;
   font-size: xx-large;
+  margin-left: 190px;
   
 }
  /* Container for About Me section  */
