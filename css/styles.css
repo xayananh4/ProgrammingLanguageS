@@ -1,8 +1,21 @@
 .vira-logo {
-  width: 165px;
+  width: 183px;
 }
 
 h2 {
   font-style: italic;
   font-size: 19px;
+}
+
+.sidebar-portfolio {
+  width: 11%;
+  background-color: rgb(237, 242, 247); 
+  float: left;
+}
+
+.item-links {
+  border: 1px solid;
+  list-style: none;
+  margin-left: -100px;
+
 }
