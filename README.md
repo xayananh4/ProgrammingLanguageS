@@ -22,5 +22,5 @@ No bugs
 
 ## License
 
-[MIT](https://opensource.org/licenses/MIT) 
+[MIT](https://opensource.org/licenses/MIT)  
 Copyright (c) _01/06/2022_ _viradeth xay-ananh_
