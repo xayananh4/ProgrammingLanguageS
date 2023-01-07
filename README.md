@@ -1,6 +1,6 @@
 # Portfolio
 
-Names of contributors: By Viradeth Xay-ananh
+Names of contributors: By Viradeth Xay-ananh.  
 A web site to showcase my current github projects and let others know a little about yourself. 
 
 # Description 
