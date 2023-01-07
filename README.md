@@ -13,8 +13,8 @@ This website includes all my github projects, a bio section, educational backgro
 * Git
 
 # Complete setup/Installation instructions:
-Clone repository to desktop
-Switch to gh-pages branch
+Clone repository to desktop  
+Switch to gh-pages branch  
 Navigate to portfolio folder, open index.html  
 
 # Known bugs: 
