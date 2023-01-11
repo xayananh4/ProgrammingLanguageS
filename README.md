@@ -14,7 +14,8 @@ This website includes all my github projects, a bio section, educational backgro
 
 # Complete setup/Installation instructions:
 Clone repository to desktop   
-Navigate to portfolio folder, open index.html  
+Navigate to portfolio folder, open index.html 
+[Viradeth Portfolio](https://github.com/xayananh4/portfolio)   
 
 # Known bugs: 
 No bugs 
