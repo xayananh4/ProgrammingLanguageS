@@ -1,8 +1,12 @@
 // User Interface Logic
+//  function to clear out previos results from screen
+ function clearPreviousResults() {
+    python.setAttribute("class", "defaultSettingHidden");
+    javascript.setAttribute("class", "defaultSettingHidden");
+    cplus.setAttribute("class", "defaultSettingHidden");
+  }
 
-
-function handleSubmission(event) {
-  
+function handleSubmission(event) { 
   let python  = document.querySelector("div#python");
   let javascript  = document.querySelector("div#javascript");
   let cplus = document.querySelector("div#cplus");
@@ -15,7 +19,6 @@ function handleSubmission(event) {
   let totalValueFromAllInputs = selectionFromInput01 + selectionFromInput02 + 
                         selectionFromInput03 + selectionFromInput04 + 
                         selectionFromInput05;
-
   if(totalValueFromAllInputs < 25)
   {
     python.removeAttribute("class");   
@@ -29,7 +32,6 @@ function handleSubmission(event) {
   else {    
       document.getElementById("error").innerHTML = "Please enter in values!";
   }
- 
 }
 
 
@@ -39,15 +41,15 @@ window.addEventListener("load", function() {
   let javascript  = document.querySelector("div#javascript");
   let cplus = document.querySelector("div#cplus");
   let resetBtn = document.querySelector("button#reset");
+  
   form.addEventListener("submit", function(event) {
+    clearPreviousResults();
     handleSubmission();
-    
-    reset.removeAttribute("class");
     event.preventDefault();
   });
 
-     
-   // Reset text box values
+
+   // event listener to reset values in the text box when user clicks reset button
   resetBtn.addEventListener("click", function() {
     python.setAttribute("class", "defaultSettingHidden");
     javascript.setAttribute("class", "defaultSettingHidden");
