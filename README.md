@@ -17,7 +17,8 @@ This website will survey future students on computer literacy, problem solving s
 # Complete setup/Installation instructions:
 Clone repository to desktop   
 Navigate to portfolio folder, open index.html  
-[Programming Language Suggester](https://xayananh4.github.io/portfolio/)   
+[Programming Language Suggester](https://xayananh4.github.io/ProgrammingLanguageS/)   
+
 
 # Known bugs: 
 No bugs 
