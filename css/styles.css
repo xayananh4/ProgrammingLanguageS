@@ -1,59 +1,12 @@
-.vira-logo {
-  width: 183px;
-}
-/* div for sidebar  */
-.sidebar-portfolio {
-  width: 11%;
-  background-color: rgb(237, 242, 247); 
-  float: left;
+.defaultSettingHidden {
+  display: none;
 }
 
-/* links to github projects */
-.item-links {
-  list-style: none;
-  margin-left: -40px;
+/* #error-message {
+  font-weight: 600; 
+  color: red;
 }
 
-span{
-  font-family: 'Courier New';
-  font-size: larger;
-}
-
-.top-aboutme-page-tab {
-  border: 1px solid #fff;
-}
- 
- /* About Me text on top left */
-.aboutme-text {
-  margin-top: 75px;
-  font-size: xx-large;
-  margin-left: 190px;
-  
-}
- /* Container for About Me section  */
-.aboutme-screen {
-  border: 1px solid grey;
-  background-color: whitesmoke;
-  margin-top: -50px;
-  margin-left: 190px;
-  margin-right: 5px;
-  padding-top: 15px;
-}
- /* center name text  */
-.aboutme-screen, h3 {
-  text-align: center;
-  font-size: xx-large;
-}
-
-.bio-container {
-  border: 1px solid black;
-  margin-top: 5px;
-  width: 48%;
-  margin-left: 8px;
-  display: inline-block;
-}
-
-.bio-container p {
-  margin-left: 8px;
-}
-
+.unhidden {
+  color: red;
+} */
