@@ -3,19 +3,24 @@
 
 function handleSubmission(event) {
   event.preventDefault();
-  let result = ""; 
+
+  
+  
+  
   let python  = document.querySelector("div#python");
   let javascript  = document.querySelector("div#javascript");
-  let assembly = document.querySelector("div#assembly");
+  let cplus = document.querySelector("div#cplus");
+  
   let selectionFormQuestionOne = document.querySelector("input[name='q01']:checked").value;
 
+
   
 
   
-  if('zeroToOne' === selectionFormQuestionOne)
-  {
-    assembly.removeAttribute("class");   
-  }
+  // if('zeroToOne' === selectionFormQuestionOne)
+  // {
+  //   cplus.removeAttribute("class");   
+  // }
     
 
   else if('neutral' === selected)
