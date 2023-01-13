@@ -30,7 +30,7 @@ function handleSubmission(event) {
     cplus.removeAttribute("class");  
   }
   else {    
-      document.getElementById("error").innerHTML = "Please enter in values!";
+      document.getElementById("error-message").innerHTML = "Please Enter Some Values!";
   }
 }
 
