@@ -4,7 +4,7 @@ Names of contributors: By Viradeth Xay-ananh.
 A web site that helps people find the suitable programming language for their coding needs.
 
 # Description 
-This website will survey future students on computer literacy, problem solving skills, background, etc. Then provide a recommend language course that accommodates their current skill level.   
+This website will survey future students on computer literacy, problem solving skills, coding background, etc. Then provide a recommend language course that should accommodates their current skill level.   
 
 ## Technologies Used
 * HTML
