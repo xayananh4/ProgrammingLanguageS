@@ -48,8 +48,12 @@ window.addEventListener("load", function() {
     event.preventDefault();
   });
 
+    // New event listener for after form submit event. Show reset button
+  form.addEventListener("submit", function() {
+    resetBtn.removeAttribute("class");
+  }); 
 
-   // event listener to reset values in the text box when user clicks reset button
+   // Event listener to reset values in the text box when user clicks reset button
   resetBtn.addEventListener("click", function() {
     python.setAttribute("class", "defaultSettingHidden");
     javascript.setAttribute("class", "defaultSettingHidden");
@@ -61,5 +65,4 @@ window.addEventListener("load", function() {
     document.getElementById("input5").value = null;
 
   });
- 
 });
