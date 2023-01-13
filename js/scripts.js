@@ -3,33 +3,42 @@
 
 function handleSubmission(event) {
   event.preventDefault();
-
-  
-  
-  
   let python  = document.querySelector("div#python");
   let javascript  = document.querySelector("div#javascript");
   let cplus = document.querySelector("div#cplus");
   
-  let selectionFormQuestionOne = document.querySelector("input[name='q01']:checked").value;
+  let selectionFromInput01 = parseInt(document.getElementById('input1').value);
+  let selectionFromInput02 = parseInt(document.getElementById('input2').value);
+  let selectionFromInput03 = parseInt(document.getElementById('input3').value);
+  let selectionFromInput04 = parseInt(document.getElementById('input4').value);
+  let selectionFromInput05 = parseInt(document.getElementById('input5').value);
+
+  let totalValueFromAllInputs = selectionFromInput01 + selectionFromInput02 + 
+                        selectionFromInput03 + selectionFromInput04 + 
+                        selectionFromInput05;
 
 
-  
-
-  
-  // if('zeroToOne' === selectionFormQuestionOne)
-  // {
-  //   cplus.removeAttribute("class");   
-  // }
+  if(totalValueFromAllInputs < 25)
+  {
+    python.removeAttribute("class");   
+  }
+  else if(totalValueFromAllInputs <= 49 && totalValueFromAllInputs >= 25){
+    javascript.removeAttribute("class");  
+  }
+  else if(totalValueFromAllInputs > 49){
+    cplus.removeAttribute("class");  
+  }
+  else {    
+      document.getElementById("error").innerHTML = "Please enter in values!";
+  }
     
 
-  else if('neutral' === selected)
-    result = "Work neutral here!";
-  else
-    result = "It's Great!";
-
-  document.getElementById("output").innerHTML = result;
+ 
 }
+
+
+
+
 
 window.addEventListener("load", function() {
   const form = document.getElementById("surveyform");
