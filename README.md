@@ -1,21 +1,23 @@
-# Portfolio
+# Programming Language Suggester
 
 Names of contributors: By Viradeth Xay-ananh.  
-A web site to showcase my current github projects and let others know a little about yourself. 
+A web site that helps people find the suitable programming language for their coding needs.
 
 # Description 
-This website includes all my github projects, a bio section, educational background and list of my favorite hobbies. 
+This website will survey future students on computer literacy, problem solving skills, background, etc. Then provide a recommend language course that accommodates their current skill level.   
 
 ## Technologies Used
 * HTML
 * CSS
 * Markup
 * Git
+* Bootstrap
+* Javascript
 
 # Complete setup/Installation instructions:
 Clone repository to desktop   
 Navigate to portfolio folder, open index.html  
-[Viradeth Portfolio](https://xayananh4.github.io/portfolio/)   
+[Programming Language Suggester](https://xayananh4.github.io/portfolio/)   
 
 # Known bugs: 
 No bugs 
@@ -23,4 +25,4 @@ No bugs
 ## License
 
 [MIT](https://opensource.org/licenses/MIT)  
-Copyright (c) _01/06/2023_ _viradeth xay-ananh_
+Copyright (c) _01/13/2023_ _viradeth xay-ananh_
