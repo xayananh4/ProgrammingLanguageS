@@ -11,6 +11,7 @@ function handleSubmission() {
   let selectionFromInput03 = parseInt(document.getElementById('input3').value);
   let selectionFromInput04 = parseInt(document.getElementById('input4').value);
   let selectionFromInput05 = parseInt(document.getElementById('input5').value);
+  
   let totalValueFromAllInputs = selectionFromInput01 + selectionFromInput02 + 
                         selectionFromInput03 + selectionFromInput04 + 
                         selectionFromInput05;
