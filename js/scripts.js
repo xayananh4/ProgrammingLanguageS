@@ -5,13 +5,15 @@
     cplus.setAttribute("class", "defaultSettingHidden");
   }
 
-function handleSubmission(selectionFromInput01,selectionFromInput02,selectionFromInput03,
-                          selectionFromInput04,selectionFromInput05) { 
-  
+function handleSubmission() { 
+  let selectionFromInput01 = parseInt(document.getElementById('input1').value);
+  let selectionFromInput02 = parseInt(document.getElementById('input2').value);
+  let selectionFromInput03 = parseInt(document.getElementById('input3').value);
+  let selectionFromInput04 = parseInt(document.getElementById('input4').value);
+  let selectionFromInput05 = parseInt(document.getElementById('input5').value);
   let totalValueFromAllInputs = selectionFromInput01 + selectionFromInput02 + 
                         selectionFromInput03 + selectionFromInput04 + 
                         selectionFromInput05;
-  
   if(totalValueFromAllInputs < 25)
   {
     python.removeAttribute("class");   
@@ -28,11 +30,6 @@ function handleSubmission(selectionFromInput01,selectionFromInput02,selectionFro
 }
 
 window.addEventListener("load", function() {  
-  let selectionFromInput01 = parseInt(document.getElementById('input1').value);
-  let selectionFromInput02 = parseInt(document.getElementById('input2').value);
-  let selectionFromInput03 = parseInt(document.getElementById('input3').value);
-  let selectionFromInput04 = parseInt(document.getElementById('input4').value);
-  let selectionFromInput05 = parseInt(document.getElementById('input5').value);
   let form = document.querySelector("form");
   let python  = document.querySelector("div#python");
   let javascript  = document.querySelector("div#javascript");
@@ -41,8 +38,7 @@ window.addEventListener("load", function() {
   
   form.addEventListener("submit", function(event) {
     clearPreviousResults();
-    handleSubmission(selectionFromInput01,selectionFromInput02,selectionFromInput03,
-                          selectionFromInput04,selectionFromInput05);
+    handleSubmission();
     event.preventDefault();
   });
 
