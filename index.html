@@ -3,7 +3,11 @@
 
 <head>
   <title>Programming Language Selector</title>
-  <link href="./css/bootstrap.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link href="./css/styles.css" rel="stylesheet" type="text/css">
   <script src="./js/scripts.js"></script>
 </head>
@@ -18,31 +22,34 @@
         programming language fits your need. We are the number one Programming Language Selector web page in the market
         that will work hard to find the right programming language for you!
       </p>
-      <!-- Form for survey  -->
+
       <br>
-      <form id="surveyform">
-        <label for="input1">Answer survey questions to determine Programming Language best for you</label>
-        <br>
-          <label for="input1">How many years of programming do you have?</label>
-          <input type="number" id="input1" name="quantity" min="0" max="1000">
-          <br>
-          <label for="input2">On a scale of 1-10 rate your computer literacy</label>
-          <input type="number" id="input2" name="computerLiteracy" min="0" max="10">
-          <br>
-          <label for="input3">On a scale of 1-10 rate your knowledge of the Internet</label>
-          <input type="number" id="input3" name="internet" min="0" max="10">
-          <br>
-          <label for="input4">On a scale of 1-10 rate your problem solving skills</label>
-          <input type="number" id="input4" name="solvingSkills" min="0" max="10">
-          <br>
-          <label for="input5">On a scale of 1-10 rate your ability to learn new material quicky</label>
-          <input type="number" id="input5" name="learnNewMaterial" min="0" max="10">
-          <br>      
-        <button type="submit">Submit</button>
-        <p id="error-message"></p>
-      </form>
-      <button type="button" class="defaultSettingHidden" id="reset">Reset Survey</button>  
+
     </div>
+    <!-- Form element for survey  -->
+    <form id="surveyform">
+      <label for="input1">Please answer these survey questions to determine Programming Language is best for you</label>
+      <hr>
+      <label for="input1">How many years of programming do you have?</label>
+      <input type="number" id="input1" name="quantity" min="0" max="1000">
+      <br>
+      <label for="input2">On a scale of 1-10 rate your computer literacy</label>
+      <input type="number" id="input2" name="computerLiteracy" min="0" max="10">
+      <br>
+      <label for="input3">On a scale of 1-10 rate your knowledge of the Internet</label>
+      <input type="number" id="input3" name="internet" min="0" max="10">
+      <br>
+      <label for="input4">On a scale of 1-10 rate your problem solving skills</label>
+      <input type="number" id="input4" name="solvingSkills" min="0" max="10">
+      <br>
+      <label for="input5">On a scale of 1-10 rate your ability to learn new material quicky</label>
+      <input type="number" id="input5" name="learnNewMaterial" min="0" max="10">
+      <br>
+      <button type="submit">Submit</button>
+      <button type="button" class="defaultSettingHidden" id="reset">Reset Survey</button>
+      <p id="error-message"></p>
+    </form>
+
 
     <!-- div container for python  -->
     <div class="row">
@@ -50,7 +57,7 @@
         <div id="python" class="defaultSettingHidden">
           <div class="card">
             <div class="card-body">
-              <h2 class="card-title">We Recommend Python</h2>
+              <h2 class="card-title">We Recommend Starting With Python</h2>
               <ul class="card-text">
                 <li>Python Is Beginner-Friendly.
                   For starters, the language is an excellent place to begin if you’re new to coding.
@@ -90,12 +97,12 @@
         </div>
       </div>
 
- <!-- div container for c++  -->
+      <!-- div container for c++  -->
       <div class="col-md-4">
         <div id="cplus" class="defaultSettingHidden">
-        <div class="card">
-          <div class="card-body">
-            <h2 class="card-title">We Recommend C++</h2>
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title">We Recommend C++</h2>
               <ul class="card-text">
                 <li>
                   By buying this course. You will learn how to program in C++ in a fast and easy way! </li>
@@ -106,11 +113,12 @@
                 <li><b>AVAILABILITY : </b>January 6 - 8, 2023</li>
                 <li><b>Cost: </b>$ 950,000.00</li>
               </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
   </div>
 </body>
+
 </html>

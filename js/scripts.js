@@ -1,4 +1,3 @@
-// User Interface Logic
 //  function to clear out previos results from screen
  function clearPreviousResults() {
     python.setAttribute("class", "defaultSettingHidden");
@@ -34,7 +33,6 @@ function handleSubmission(event) {
   }
 }
 
-
 window.addEventListener("load", function() {  
   let form = document.querySelector("form");
   let python  = document.querySelector("div#python");
@@ -48,7 +46,7 @@ window.addEventListener("load", function() {
     event.preventDefault();
   });
 
-    // New event listener for after form submit event. Show reset button
+    // New event listener for after form submit event the reset button is shown
   form.addEventListener("submit", function() {
     resetBtn.removeAttribute("class");
   }); 
