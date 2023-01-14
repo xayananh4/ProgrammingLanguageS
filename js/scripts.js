@@ -5,19 +5,13 @@
     cplus.setAttribute("class", "defaultSettingHidden");
   }
 
-function handleSubmission(event) { 
-  let python  = document.querySelector("div#python");
-  let javascript  = document.querySelector("div#javascript");
-  let cplus = document.querySelector("div#cplus");
-  let selectionFromInput01 = parseInt(document.getElementById('input1').value);
-  let selectionFromInput02 = parseInt(document.getElementById('input2').value);
-  let selectionFromInput03 = parseInt(document.getElementById('input3').value);
-  let selectionFromInput04 = parseInt(document.getElementById('input4').value);
-  let selectionFromInput05 = parseInt(document.getElementById('input5').value);
-
+function handleSubmission(selectionFromInput01,selectionFromInput02,selectionFromInput03,
+                          selectionFromInput04,selectionFromInput05) { 
+  
   let totalValueFromAllInputs = selectionFromInput01 + selectionFromInput02 + 
                         selectionFromInput03 + selectionFromInput04 + 
                         selectionFromInput05;
+  
   if(totalValueFromAllInputs < 25)
   {
     python.removeAttribute("class");   
@@ -34,6 +28,11 @@ function handleSubmission(event) {
 }
 
 window.addEventListener("load", function() {  
+  let selectionFromInput01 = parseInt(document.getElementById('input1').value);
+  let selectionFromInput02 = parseInt(document.getElementById('input2').value);
+  let selectionFromInput03 = parseInt(document.getElementById('input3').value);
+  let selectionFromInput04 = parseInt(document.getElementById('input4').value);
+  let selectionFromInput05 = parseInt(document.getElementById('input5').value);
   let form = document.querySelector("form");
   let python  = document.querySelector("div#python");
   let javascript  = document.querySelector("div#javascript");
@@ -42,7 +41,8 @@ window.addEventListener("load", function() {
   
   form.addEventListener("submit", function(event) {
     clearPreviousResults();
-    handleSubmission();
+    handleSubmission(selectionFromInput01,selectionFromInput02,selectionFromInput03,
+                          selectionFromInput04,selectionFromInput05);
     event.preventDefault();
   });
 
@@ -51,7 +51,7 @@ window.addEventListener("load", function() {
     resetBtn.removeAttribute("class");
   }); 
 
-   // Event listener to reset values in the text box when user clicks reset button
+   // Event listener to reset values in the text box when user clicks on reset button
   resetBtn.addEventListener("click", function() {
     python.setAttribute("class", "defaultSettingHidden");
     javascript.setAttribute("class", "defaultSettingHidden");
@@ -61,6 +61,5 @@ window.addEventListener("load", function() {
     document.getElementById("input3").value = null;
     document.getElementById("input4").value = null;
     document.getElementById("input5").value = null;
-
   });
 });
