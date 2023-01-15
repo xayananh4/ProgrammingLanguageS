@@ -12,22 +12,21 @@ function handleSubmission() {
   let input4Value = parseInt(document.getElementById('input4').value);
   let input5Value = parseInt(document.getElementById('input5').value);
   const firstNameInput = document.getElementById("fNameInput").value;
-  const recommendation = document.querySelector("span#fNameInput").innerText = firstNameInput;
-
+  
   let totalValue = input1Value + input2Value + input3Value + input4Value
     + input5Value;
 
   if (totalValue < 25) {
     python.removeAttribute("class");
-    recommendation;
+    document.querySelector("span#fNameInputPython").innerText = firstNameInput;
   }
   else if (totalValue <= 49 && totalValue >= 25) {
     javascript.removeAttribute("class");
-    recommendation;
+    document.querySelector("span#fNameInputJS").innerText = firstNameInput;
   }
   else if (totalValue > 49) {
     cplus.removeAttribute("class");
-    recommendation;
+    document.querySelector("span#fNameInputC++").innerText = firstNameInput;
   }
   else {
     document.getElementById("error-message").innerHTML = "Please Enter Some Values!";
