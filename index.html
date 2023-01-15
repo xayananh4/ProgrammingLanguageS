@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
   <title>Programming Language Selector</title>
   <meta charset="utf-8">
@@ -10,6 +11,7 @@
   <link href="./css/styles.css" rel="stylesheet" type="text/css">
   <script src="./js/scripts.js"></script>
 </head>
+
 <body>
   <div class="container">
     <div class="jumbotron">
@@ -22,10 +24,14 @@
       </p>
       <br>
     </div>
-    
+
     <!-- Form element for survey questions  -->
     <form id="surveyform">
-      <label for="input1">Please answer these survey questions to determine Programming Language is best for you:</label>
+      <label for="fNameInput">Please enter in your first name:</label>
+      <input id="fNameInput" type="text" name="fNameInput">
+
+      <label for="input1">Please answer these survey questions to determine Programming Language is best for
+        you:</label>
       <hr>
       <label for="input1">How many years of programming do you have?</label>
       <input type="number" id="input1" name="quantity" min="0" max="1000">
@@ -53,7 +59,8 @@
         <div id="python" class="defaultSettingHidden">
           <div class="card">
             <div class="card-body">
-              <h2 class="card-title">We Recommend Starting With Python</h2>
+              <h2 class="card-title"><span id="fNameInput"></span>, you ought to study Python it is Beginner-Friendly!
+              </h2>
               <ul class="card-text">
                 <li>Python Is Beginner-Friendly.
                   For starters, the language is an excellent place to begin if you’re new to coding.
@@ -76,7 +83,7 @@
         <div id="javascript" class="defaultSettingHidden">
           <div class="card">
             <div class="card-body">
-              <h2 class="card-title">We Recommend Javascript</h2>
+              <h2 class="card-title"><span id="fNameInput"></span>, you more like a mid lever why dont you check out javascript!</h2>
               <ul class="card-text">
                 <li>
                   In these days when the browser is central to all computer use knowing "the language of the browser" is
@@ -98,7 +105,7 @@
         <div id="cplus" class="defaultSettingHidden">
           <div class="card">
             <div class="card-body">
-              <h2 class="card-title">We Recommend C++</h2>
+              <h2 class="card-title"><span id="fNameInput"></span>, actually you are a computer genius take the c++ course!</h2>
               <ul class="card-text">
                 <li>
                   By buying this course. You will learn how to program in C++ in a fast and easy way! </li>
@@ -116,4 +123,5 @@
     </div>
   </div>
 </body>
+
 </html>
