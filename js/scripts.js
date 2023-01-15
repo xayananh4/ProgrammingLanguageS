@@ -1,5 +1,8 @@
 //  function to clear out previos results from screen
 function clearPreviousResults() {
+  let python = document.querySelector("div#python");
+  let javascript = document.querySelector("div#javascript");
+  let cplus = document.querySelector("div#cplus");
   python.setAttribute("class", "defaultSettingHidden");
   javascript.setAttribute("class", "defaultSettingHidden");
   cplus.setAttribute("class", "defaultSettingHidden");
@@ -12,7 +15,7 @@ function handleSubmission() {
   let input4Value = parseInt(document.getElementById('input4').value);
   let input5Value = parseInt(document.getElementById('input5').value);
   const firstNameInput = document.getElementById("fNameInput").value;
-  
+
   let totalValue = input1Value + input2Value + input3Value + input4Value
     + input5Value;
 
@@ -26,7 +29,7 @@ function handleSubmission() {
   }
   else if (totalValue > 49) {
     cplus.removeAttribute("class");
-    document.querySelector("span#fNameInputC++").innerText = firstNameInput;
+    document.querySelector("span#fNameInputC").innerText = firstNameInput;
   }
   else {
     document.getElementById("error-message").innerHTML = "Please Enter Some Values!";
@@ -36,9 +39,6 @@ function handleSubmission() {
 // lod event listener 
 window.addEventListener("load", function () {
   let form = document.querySelector("form");
-  let python = document.querySelector("div#python");
-  let javascript = document.querySelector("div#javascript");
-  let cplus = document.querySelector("div#cplus");
   let resetBtn = document.querySelector("button#reset");
 
   form.addEventListener("submit", function (event) {
