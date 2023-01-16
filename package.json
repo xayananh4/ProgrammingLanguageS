@@ -1,0 +1,20 @@
+{
+  "name": "ProgrammingLanguage02",
+  "version": "1.0.0",
+  "description": "Names of contributors: By Viradeth Xay-ananh.   A web site that helps people find the suitable programming language for their coding needs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xayananh4/ProgrammingLanguageS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xayananh4/ProgrammingLanguageS/issues"
+  },
+  "homepage": "https://github.com/xayananh4/ProgrammingLanguageS#readme"
+}
